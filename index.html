@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>NotiUNAB</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Pantalla de entrada -->
+    <div class="intro-loader" id="introLoader">
+    <div class="intro-animation">
+
+    <div class="intro-logo-mark">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <h1>
+      <span>Noti</span>UNAB
+    </h1>
+
+    <p>Noticias que conectan</p>
+
+    <div class="intro-loading">
+      <span></span>
+    </div>
+
+    <small>Inicializando emisión...</small>
+  </div>
+    </div>
+
+  <!-- Barra superior -->
+  <div class="top-bar">
+    <span>Noticias universitarias</span>
+    <span>UNAB · Bucaramanga</span>
+  </div>
+
+  <!-- Header principal -->
+  <header class="main-header">
+    <a href="#" class="logo">
+      <span class="logo-symbol">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+
+      <span class="logo-text">
+        <strong>Noti</strong>UNAB
+        <small>Noticias que conectan</small>
+      </span>
+    </a>
+
+    <div class="header-news">
+      <span class="live-dot"></span>
+      <span class="live-label">EN VIVO</span>
+      <p>Actualidad, cultura y comunidad universitaria</p>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="hero-background"></div>
+
+      <div class="hero-content">
+        <span class="section-tag">NOTICIA DESTACADA</span>
+
+        <h1>
+          La información que mueve a la comunidad UNAB
+        </h1>
+
+        <p>
+          Conoce las noticias, eventos y protagonistas de nuestra universidad.
+        </p>
+
+        <a href="#video" class="primary-button">
+          Ver noticia principal
+          <span>→</span>
+        </a>
+      </div>
+
+      <div class="hero-card">
+        <span class="card-category">ACTUALIDAD</span>
+        <h3>La universidad sigue construyendo nuevas oportunidades</h3>
+        <div class="card-line"></div>
+        <p>Entérate de las novedades más importantes de la semana.</p>
+      </div>
+    </section>
+
+    <!-- Espacio para el video -->
+    <section class="video-section" id="video">
+      <div class="section-heading">
+        <div>
+          <span class="section-tag">TRANSMISIÓN</span>
+          <h2>Última emisión</h2>
+        </div>
+
+        <span class="date">NotiUNAB · 2026</span>
+      </div>
+
+      <div class="video-container">
+       <video controls poster="/miniatura.png">
+        <source src="/video.MOV">
+        Tu navegador no soporta la reproducción de videos.
+        </video>
+      </div>
+    </section>
+
+    <!-- Carrusel informativo -->
+    <section class="info-section">
+      <div class="section-heading">
+        <div>
+          <span class="section-tag">EN BREVE</span>
+          <h2>Información UNAB</h2>
+        </div>
+
+        <div class="carousel-controls">
+          <button id="prevBtn">‹</button>
+          <button id="nextBtn">›</button>
+        </div>
+      </div>
+
+      <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+
+          <article class="info-card">
+            <span class="info-number">01</span>
+            <div>
+              <h3>Agenda universitaria</h3>
+              <p>Consulta los próximos eventos académicos y culturales.</p>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <span class="info-number">02</span>
+            <div>
+              <h3>Comunidad UNAB</h3>
+              <p>Historias de estudiantes, docentes y egresados.</p>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <span class="info-number">03</span>
+            <div>
+              <h3>Innovación y tecnología</h3>
+              <p>Descubre los proyectos que transforman nuestro entorno.</p>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <span class="info-number">04</span>
+            <div>
+              <h3>Bienestar universitario</h3>
+              <p>Información para cuidar tu salud y calidad de vida.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <span>Noti<strong>UNAB</strong></span>
+      <small>Noticias que conectan</small>
+    </div>
+
+    <p>Proyecto académico · Universidad Autónoma de Bucaramanga</p>
+
+    <span class="copyright">© 2026 NotiUNAB</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
